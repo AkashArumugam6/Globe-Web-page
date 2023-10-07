@@ -97,6 +97,10 @@ main {
     margin-bottom: 0;
 }
 
+.hotelInfo{
+    display: flex;
+}
+
 .path {
     font-size: 13px;
     font-weight: 500;
@@ -166,24 +170,33 @@ main {
     display: inline-block;
 }
 
+.details{
+    padding-left: 470px;
+}
+
 .details p{
-    font-size: 18px;
+    margin:55px 0 10px 0;
+    font-size: 25px;
     font-weight: 700;
     color: #ff8985;
 }
 
-#per {
-    font-size: 10px;
-}
+
+
 
 .feedback {
-    padding: 10px 15px;
+    padding: 6px 10px;
+    margin: 10px 10px 10px 0;
     background-color: #f6f8fa;
     color: #000;
     border: 1px solid #8dd3bb;
     border-radius: 5px;
     cursor: pointer;
     
+}
+
+.book {
+    padding: 10px 10px 8px 10px;
 }
 
 button {
