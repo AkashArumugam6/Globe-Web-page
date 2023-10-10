@@ -1,0 +1,10 @@
+$users: 1, 2, 3, 4, 5;
+
+@each $user in $users{
+    .user#{$user}{
+
+        width:30px;
+        height:30px;
+
+    }
+}
