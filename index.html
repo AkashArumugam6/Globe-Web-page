@@ -3,7 +3,7 @@
 <head>
     <!-- the Web browser title -->
     <title>Globe</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="dist/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -22,15 +22,18 @@
                     <a href="">Find Stays</a>
                 </li>
                 <li class="logo">
-                    <a href=""><img src="assets/Logo.png" alt="globe Logo" height="30" width="90"></a>
+                    <a href=""><img src="assets/Logo.png" alt="globe Logo"  width="95"></a>
                 </li>
                 <li class="navigation">
                     <img src="assets/icons/heart.svg" alt="heart Logo">
-                    <a href="">Favourites</a>
+                    <a href="">Favourites </a>
                 </li>
-                <li class="navigation">
-                    <img src="assets/icons/User.svg" alt="heart Logo">
-                    <a href="">John.D</a>
+                <li>
+                    <span>| </span>
+                </li>
+                <li class="navigation user">
+                    <div><img src="Images/john.jpg" alt="User" height="18px" width="18px"></div>
+                    <div><a href="">John.D</a></div>
                 </li>
             </ul>
         </nav>  
@@ -70,21 +73,26 @@
             </section>
         </section>
         <!-- This section contains few images of the hotel -->
-        <section class="pictures">
-            <picture>
-                <img id="image1" src="Images/img2.jpg" alt="Image1" height="405" width="550"> 
-                <div>
-                    <img id="image2" src="Images/img3.jpg" alt="Image2" height="200" width="300"> 
-                    <img id="image2" src="Images/img1.jpg" alt="Image3" height="200" width="300"> 
+        <section>
+            <div class="pic-container">
+                <div class="image1 pic"><img class="image1 pic" src="Images/img2.jpg" alt="Image1"> </div>
+                <div class="image2 pic">
+                    <img src="Images/img3.jpg" alt="Image2">
                 </div>
-                <div>
-                    <img id="image2" src="Images/img4.jpg" alt="Image4" height="200" width="300">  
-                    <img id="image2" src="Images/image5.jpg" alt="Image5" height="200" width="300"> 
+                <div class="image3 pic">
+                    <img src="Images/img1.jpg" alt="Image3"> 
+                </div>
+                <div class="image4 pic">
+                    <img src="Images/img4.jpg" alt="Image4">
+                </div>
+                <div class="image5 pic">  
+                    <img src="Images/image5.jpg" alt="Image5"> 
                 </div>
             </picture>
-            <button class="photos" type="button">View all photos</button>
-            <hr>
-        </section> 
+            <div class="view-all">
+                <button class="photos" type="button">View all photos</button>
+            </div>   
+        </section><hr>
         <!-- The below section contains the overview and the highlights of the Hotel -->
         <section class="overview">
             <h2>Overview</h2>
@@ -236,31 +244,31 @@
                     <p>371 reviews</p></div>              
                 </li><hr>
                 <li class="userreview">
-                    <div><img src="assets/icons/User.svg" alt="user"></div>
+                    <div><img src="Images/Omar.png" alt="user" width="30px" height="30px"></div>
                     <div><p><b>5.0 Amazing</b> | Omar Siphron</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis laborum ullam voluptatibus ipsam dolores iure dolorem eos aliquam excepturi cum vel, accusantium in provident nam molestias ab quos? Repudiandae consectetur quisquam nam iure sit fugiat!</p></div>
                     <div><img id="flag" src="assets/icons/Flag.svg" alt="Flag"></div>              
                 </li><hr>
                 <li class="userreview">
-                    <div><img src="assets/icons/User.svg" alt="user"></div>
+                    <div><img src="Images/Cristofer.png" alt="user" width="30px" height="30px"></div>
                     <div><p><b>5.0 Amazing</b> | Cristofer Ekstrom Bothman</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis laborum ullam voluptatibus ipsam dolores iure dolorem eos aliquam excepturi cum vel, accusantium in provident nam molestias ab quos? Repudiandae consectetur quisquam nam iure sit fugiat!</p></div>
                     <div><img id="flag" src="assets/icons/Flag.svg" alt="Flag">   </div>            
                 </li><hr>
                 <li class="userreview">
-                    <div><img src="assets/icons/User.svg" alt="user"></div>
+                    <div><img src="Images/Kaiya.png" alt="user" width="30px" height="30px"></div>
                     <div><p><b>5.0 Amazing</b> | Kaiya Lubin</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis laborum ullam voluptatibus ipsam dolores iure dolorem eos aliquam excepturi cum vel, accusantium in provident nam molestias ab quos? Repudiandae consectetur quisquam nam iure sit fugiat!</p></div>
                     <div><img id="flag" src="assets/icons/Flag.svg" alt="Flag">   </div>            
                 </li><hr>
                 <li class="userreview">
-                    <div><img src="assets/icons/User.svg" alt="user"></div>
+                    <div><img src="Images/Erin.png" alt="user" width="30px" height="30px"></div>
                     <div><p><b>5.0 Amazing</b> | Erin Septimus</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis laborum ullam voluptatibus ipsam dolores iure dolorem eos aliquam excepturi cum vel, accusantium in provident nam molestias ab quos? Repudiandae consectetur quisquam nam iure sit fugiat!</p></div>
                     <div><img id="flag" src="assets/icons/Flag.svg" alt="Flag">   </div>            
                 </li><hr>
                 <li class="userreview">
-                    <div><img src="assets/icons/User.svg" alt="user"></div>
+                    <div><img src="Images/John.png" alt="user" width="30px" height="30px" class="userimage"></div>
                     <div><p><b>5.0 Amazing</b> | Terry George</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis laborum ullam voluptatibus ipsam dolores iure dolorem eos aliquam excepturi cum vel, accusantium in provident nam molestias ab quos? Repudiandae consectetur quisquam nam iure sit fugiat!</p></div>
                     <div><img id="flag" src="assets/icons/Flag.svg" alt="Flag">   </div>            
@@ -285,38 +293,95 @@
                         <input placeholder="Your email address" name="email" type="email" class="email"> <button class="submit" type="submit">Subscribe</button>
                         </form>
                     </div>
-                    <div><img src="Images/mailbox.jpg" alt="mailbox" height="200" width="300"></div>
+                    <div class="mailbox"><img src="Images/mailbox.jpg" alt="mailbox" height="220" width="320"></div>
             </section> 
         </div>
          
         <section class="contact">
             <section>
-                <ul>
-                    <li>
-                        <a href=""><img src="assets/icons/logo1.jpg" alt="Logo" height="35" width="100"></a></br>
-                        <a href=""><picture><img src="assets/icons/icons8-facebook.svg" alt="facebook" height="15" width="15"> <img src="assets/icons/icons8-twitter.svg" alt="twitter" height="15" width="15"> <img src="assets/icons/icons8-youtube.svg" alt="youtube" height="15" width="15"> <img src="assets/icons/icons8-instagram.svg" alt="instagram" height="15" width="15"></picture></a>
-                    </li>
-                    <li>
-                        <a href=""><h4>Our Destinations</h4></a>
-                        <a href=""><p>Canada</br>Alaska</br>France</br>Iceland</p></a>
-                    </li>
-                    <li>
-                        <a href=""><h4>Our Activities</h4></a>
-                        <a href=""><p>Northern Lights</br>Cruising & sailing</br>Multi-activities</br>Kayaking</p></a>
-                    </li>
-                    <li>
-                        <a href=""><h4>Travel Blogs</h4></a>
-                        <a href=""><p>Bali Travel Guide</br>Srilanka Travel Guide</br>Peru Travel Guide</br>Thailand Travel Guide</p></a>
-                    </li>
-                    <li>
-                        <a href=""><h4>About Us</h4></a>
-                        <a href=""><p>Our Story</br>Work with us</p></a>
-                    </li>
-                    <li>
-                        <a href=""><h4>Contact Us</h4></a>
-                        <a href=""><p>Our Story</br>Work with us</p></a>
-                    </li>
-                </ul>
+                <div>
+                    <ul>
+                        <li>
+                            <a href=""><img src="assets/icons/logo1.jpg" alt="Logo" height="35" width="100"></a></br>
+                            <a href=""><picture><img src="assets/icons/icons8-facebook.svg" alt="facebook" height="15" width="15"> <img src="assets/icons/icons8-twitter.svg" alt="twitter" height="15" width="15"> <img src="assets/icons/icons8-youtube.svg" alt="youtube" height="15" width="15"> <img src="assets/icons/icons8-instagram.svg" alt="instagram" height="15" width="15"></picture></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="destination">
+                    <ul>
+                        <li>
+                            <h4>Our Destinations</h4>
+                        </li>
+                        <li>
+                            <a href="">Canada</a>
+                        </li>
+                        <li>
+                            <a href="">Alaska</a>
+                        </li>
+                        <li>
+                            <a href="">France</a>
+                        </li>
+                        <li>
+                            <a href="">Ireland</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Our Activities</h4>
+                        </li>
+                        <li>
+                            <a href = "">Northern Lights</a>
+                        </li>
+                        <li>
+                            <a href = "">Cruising & sailing</a>
+                        </li>
+                        <li>
+                            <a href = "">Multi Activities</a>
+                        </li>
+                        <li>
+                            <a href = "">Kayaking</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Travel Blogs</h4>
+                        </li>
+                        <li>
+                            <a href = "">Bali Travel Guide</a>
+                        </li>
+                        <li>
+                            <a href = "">Sri Lanka Guide</a>
+                        </li>
+                        <li>
+                            <a href = "">Peru Travel Guide</a>
+                        </li>
+                        <li>
+                            <a href = "">India Travel Guide</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>About Us</h4>
+                        </li>
+                        <li>
+                            <a href = "">Our Story</a>
+                        </li>
+                        <li>
+                            <a href = "">Work with us</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Contact Us</h4>
+                        </li>
+                        <li>
+                            <a href = "">Our Story</a>
+                        </li>
+                        <li>
+                            <a href = "">Work with us</a>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </section>
     </footer>

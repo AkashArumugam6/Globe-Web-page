@@ -1,0 +1,48 @@
+/* Available rooms in the hotel */
+.rooms {
+    padding-bottom : 10px;
+    
+    h1 {
+        font-size: 18px;
+        font-weight: map-get($font-weight, "darker");
+        padding-bottom: 10px;
+    }
+
+    div {
+        padding-top: 10px;
+    }
+
+    img {
+        margin-right: 20px;
+    }
+}
+
+.room-item{
+    @include flex-default(space-between);
+
+    button {
+        margin-left: 20px;
+    }
+
+    p{
+        margin: 7px;
+    } 
+}
+
+.item {
+    display: flex;
+
+    img {
+        border-radius: 2px;
+    }
+
+    p{
+        margin: 10px 0 0 0;
+        font-size: $paragraph-fontsize;
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: map-get($font-weight, "darker");
+    }
+}

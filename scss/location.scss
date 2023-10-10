@@ -1,0 +1,29 @@
+/* Location details about the hotel */
+.locationdetails {
+    padding: 10px 0;
+
+    h1{
+        font-size: 18px;
+        font-weight: map-get($font-weight, "darker");
+        padding: 10px 0;
+    }
+
+    div {
+        font-size: $paragraph-fontsize;
+        padding-bottom: 40px;   
+    }
+}
+
+.maps {
+    margin-left: 1040px;
+}
+
+.location-header{
+    @include flex-default(space-between);
+}
+
+iframe {
+    width: 85rem;
+    border: #fff;
+    border-radius: 5px;
+}

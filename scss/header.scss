@@ -1,0 +1,64 @@
+/* header and navigation */
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 7px -2px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav {
+    @include layout-margin;
+
+    ul {
+
+        list-style-type: none; 
+        @include flex-default(center);
+        gap: 20px;
+        align-items:center;
+
+        li {
+            text-align: center;
+
+            span {
+                padding: 0;
+                font-weight: map-get($font-weight, "normal");;
+            }
+            
+        }
+    }
+}
+
+.logo {
+    
+    flex: 16 4 auto;
+    
+}
+
+.navigation:hover {
+    border-bottom: 4px solid $button-background;
+    padding-bottom: 16px;
+}
+
+.navigation {
+    font-size: $paragraph-fontsize;
+    font-weight: map-get($font-weight, "darker");
+    width: fit-content;
+    padding: 20px 0;
+
+    a {
+        @include anchor-reset ($black);
+    }  
+}
+
+.user {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    img{
+        border-radius: 20px;
+    }
+ 
+}

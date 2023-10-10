@@ -1,0 +1,23 @@
+/* Body of the web page */
+main {
+    margin-top: 50px;
+    background-color:  $body-background;
+    
+}
+
+.pagebody {
+    @include layout-margin;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

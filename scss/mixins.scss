@@ -1,0 +1,20 @@
+@mixin default {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin layout-margin {
+    width: 85rem;
+    margin: 0 auto;
+}
+
+@mixin anchor-reset ($color) {
+    text-decoration: none;
+    border: none;
+    color: $color;
+}
+
+@mixin flex-default ($item){
+    display: flex;
+    justify-content: $item;
+}

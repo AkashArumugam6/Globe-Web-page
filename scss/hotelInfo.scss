@@ -1,0 +1,115 @@
+/* Hotel basic information */
+.hotelInfo {
+    padding: 30px 0 0 0;
+    display: flex;
+
+    li {
+        margin-bottom: 0;
+    }
+}
+
+.path {
+    font-size: $paragraph-fontsize;
+    font-weight: map-get($font-weight, "dark");
+    display: flex;
+
+    div {
+        padding: 12px 0 12px 3px;   
+    }
+
+    a {
+        @include anchor-reset(#ff8985);   
+    }
+
+    p {
+        color: $black;
+    }     
+}
+
+#arrow {
+    margin: 0 5px 0 5px;
+}
+
+.hotel-name {
+    font-size: 25px;
+    font-weight: map-get($font-weight, "normal");
+    width: max-content;
+    margin-right: 20px;
+    height: fit-content;
+    display: inline-block;
+
+    p{
+        margin: 5px;
+    }
+}
+
+.location {
+    font-size: $paragraph-fontsize;
+    font-weight: map-get($font-weight, "normal");
+}
+
+.reviews {
+    font-size: $paragraph-fontsize;
+
+    p{
+        padding: 10px;
+        width: fit-content;
+        border: 1px solid $button-background;
+        border-radius: 5px;
+    }
+}
+
+.review-item {
+    display: inline-block;
+}
+
+.rating {
+    font-size: $paragraph-fontsize;
+    width: fit-content;
+    @extend .review-item;
+}
+
+.details{
+    padding-left: 470px;
+    margin-bottom: 15px;
+
+    p{
+        margin:55px 0 10px 120px;
+        font-size: 10px;
+        font-weight: map-get($font-weight, "bold");
+        color: #ff8985;
+    }
+
+    span {
+        font-size: 25px;
+        
+    }
+}
+
+.feedback {
+    padding: 6px 10px;
+    margin: 10px 10px 10px 0;
+    background-color: $body-background;
+    color: $black;
+    border: 1px solid $button-background;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+
+.book {
+    padding: 10px 20px 8px 20px;
+}
+
+button {
+    @extend .feedback;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;  
+    background-color: $button-background;  
+    font-weight: map-get($font-weight, "darker");
+    font-family: $font-style;
+
+}
+
+button:hover {
+    background-color: #98dbc4;
+}

@@ -1,0 +1,39 @@
+
+/* basic amenities */
+.amenities{
+    padding: 10px 0;
+
+    h1 {
+        font-size: 18px;
+        font-weight: map-get($font-weight, "darker");
+    }
+
+    ul{
+        font-size: $paragraph-fontsize;
+        font-weight: map-get($font-weight, "darker");
+        margin: 10px 0 50px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px; 
+        padding: 0;
+
+        li {
+            padding-top: 10px;
+            display: flex;
+        }
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+
+    a {
+        @include anchor-reset(#ff8985);
+    }
+
+    p {
+        margin: 5px 0 0 10px;
+        font-weight: map-get($font-weight, "normal");
+    }
+}

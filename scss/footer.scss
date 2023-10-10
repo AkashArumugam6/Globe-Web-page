@@ -1,0 +1,104 @@
+//  Footer with subscribe and contact information 
+.footer-color {
+    background-color: $body-background;
+}
+
+.subscribe {
+    @include layout-margin;
+    background-color: $footer-background;
+    border: $footer-background;
+    border-radius: 10px;
+    padding: 10px 20px 0 0;
+    @include flex-default (space-between);
+    position: relative;
+    top: 110px;
+
+    h1 {
+        padding: 10px;
+        margin: 0 20px 10px 20px;
+        font-size: 45px;
+        font-weight: map-get($font-weight, "dark");
+    
+    }
+
+    p{
+        padding:0 10px;
+        margin: 0 20px;
+        font-size: $paragraph-fontsize;
+        font-weight: map-get($font-weight, "normal");;
+    
+    }
+}
+
+#travel {
+    padding:5px 10px;
+    margin: 0 20px;
+    font-size: 15px;
+    font-weight: map-get($font-weight, "darker");
+}
+
+.email {
+    padding:8px 10px;
+    margin:10px;
+    margin-left: 30px;
+    width: 400px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+.mailbox img{
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+}
+
+.submit {
+    font-family: $font-style;
+    background-color: $black;
+    border: $black;
+    color: #fff;
+    font-size: 10px;
+    padding: 13px 13px;
+    
+}
+
+.submit:hover {
+    background-color: #f2f3f4;
+    color: $black;
+}
+
+.contact {
+    background-color: $button-background;
+    padding: 200px 80px 50px 80px;
+
+    section {
+    
+        @include flex-default (space-between);
+        @include layout-margin;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    picture {
+        padding: 0 0 30px 10px;
+    }
+
+    a {
+        @include anchor-reset ($black);
+        font-size: $paragraph-fontsize;
+        font-weight: map-get($font-weight, "normal");
+        padding: 7px 0;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+}
+
+.destination{
+    display: flex;
+    gap: 120px;
+}

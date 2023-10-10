@@ -1,0 +1,20 @@
+// Global properties
+body {
+    font-family: $font-style;
+    box-sizing: border-box;
+    @include default;
+    
+}
+
+hr {
+    margin: 0;
+    border-color: #fff;
+}
+ul {
+    @include default;
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    @include default;
+}
